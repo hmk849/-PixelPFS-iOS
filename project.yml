@@ -20,11 +20,6 @@ targets:
       - sdk: UIKit.framework
       - sdk: Foundation.framework
       - sdk: CoreGraphics.framework
-    
-    dependencies:
-      - sdk: UIKit.framework
-      - sdk: Foundation.framework
-      - sdk: CoreGraphics.framework
     deploymentTarget: "15.0"
 
     sources:
