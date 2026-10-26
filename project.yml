@@ -15,7 +15,11 @@ targets:
   PixelPFS:
     type: application
     platform: iOS
-
+    
+    dependencies:
+      - sdk: UIKit.framework
+      - sdk: Foundation.framework
+      - sdk: CoreGraphics.framework
     deploymentTarget: "15.0"
 
     sources:
