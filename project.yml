@@ -1,0 +1,44 @@
+name: PixelPFS
+
+options:
+  bundleIdPrefix: com.hmk849
+  deploymentTarget:
+    iOS: "15.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    CLANG_CXX_LANGUAGE_STANDARD: "c++17"
+    CLANG_CXX_LIBRARY: "libc++"
+
+targets:
+  PixelPFS:
+    type: application
+    platform: iOS
+
+    deploymentTarget: "15.0"
+
+    sources:
+      - path: PixelPFS
+        excludes:
+          - "**/*.md"
+
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.hmk849.pixelpfs
+
+        PRODUCT_NAME: PixelPFS
+
+        GENERATE_INFOPLIST_FILE: YES
+
+        INFOPLIST_KEY_CFBundleDisplayName: "Pixel PFS"
+
+        INFOPLIST_KEY_UIRequiresFullScreen: YES
+
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+
+        TARGETED_DEVICE_FAMILY: "1"
+
+        ENABLE_BITCODE: NO
+
+        CODE_SIGNING_ALLOWED: NO
