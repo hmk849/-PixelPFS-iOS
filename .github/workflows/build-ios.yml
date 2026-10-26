@@ -30,6 +30,7 @@ jobs:
             -sdk iphoneos \
             -derivedDataPath build \
             CODE_SIGNING_ALLOWED=NO \
+            OTHER_LDFLAGS="-framework UIKit -framework Foundation -framework CoreGraphics" \
             build
 
       - name: Package IPA
