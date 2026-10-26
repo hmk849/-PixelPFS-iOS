@@ -30,6 +30,14 @@ targets:
 
     settings:
       base:
+        OTHER_LDFLAGS:
+          - "$(inherited)"
+          - "-framework"
+          - "UIKit"
+          - "-framework"
+          - "Foundation"
+          - "-framework"
+          - "CoreGraphics"
         PRODUCT_BUNDLE_IDENTIFIER: com.hmk849.pixelpfs
 
         PRODUCT_NAME: PixelPFS
