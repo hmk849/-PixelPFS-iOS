@@ -10,7 +10,6 @@ settings:
     SWIFT_VERSION: "5.0"
     CLANG_CXX_LANGUAGE_STANDARD: "c++17"
     CLANG_CXX_LIBRARY: "libc++"
-    OTHER_LDFLAGS: "-framework UIKit -framework Foundation -framework CoreGraphics"
 
 targets:
   PixelPFS:
